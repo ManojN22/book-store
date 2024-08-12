@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.App{
+display: flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Search-Results{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Book-Card{
+    width: 600px;
+    display: flex;
+    gap:25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Book-Thumbnail{
+    width: 90px;
+    height: 130px;;
 }
-
-.App-link {
-  color: #61dafb;
+.Left-Img{
+    padding: 10px;
 }
+.Right-Description{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+.Title{
+    font-weight: 600;
+    font-size: 2em;
+}
+.Sub-Title{
+    font-weight: 700;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Search-Bar{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Sticky-Wishlist{
+    position: sticky;
+    top: 20px;
+   
+}
+.Wishlist-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 10px;
+}
+.Book-Wishlist{
+    padding: 30px;
+    width: 30vw;
+}
+.Wishlist-Item{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
 }
