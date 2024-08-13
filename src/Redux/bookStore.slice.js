@@ -16,8 +16,8 @@ export const bookStoreSlice = createSlice({
   name: "bookStore",
   initialState,
   reducers: {
-    fetchData: (state) => {
-      state.data = [];
+    setData: (state,actions) => {
+      state.data = [actions.payload];
     },
   },
   extraReducers: (builder) => {
@@ -34,5 +34,5 @@ export const bookStoreSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { fetchData } = bookStoreSlice.actions;
+export const { setData } = bookStoreSlice.actions;
 export default bookStoreSlice.reducer;

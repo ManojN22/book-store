@@ -40,7 +40,7 @@ display: flex;
     width: 70vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap:20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -64,4 +64,21 @@ display: flex;
         list-style-type: none;
         display: flex;
         justify-content: space-between;
+}
+.Search-Sugesstion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+    font-size: larger;
+    width: 400px;
+}
+.Suggestion-Items{
+    background-color: rgba(145, 145, 145,0.2);
+    padding: 0.2em;
+}
+.Bar-Input{
+    font-size: larger;
 }
